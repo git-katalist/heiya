@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Let`s do this!!!</h1>
-        <Link style={{backgroundColor:'#1A7F37'}} href="https://www.google.com/"><a>Let`s go to google</a></Link>
+        <Link style={{backgroundColor:#1A7F37}} href="https://www.google.com/"><a>Let`s go to google</a></Link>
         <p>Tots in the hoooouuuse</p>
       </main>
 
