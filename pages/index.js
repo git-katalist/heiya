@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,7 +13,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>Let us do this!!!</h1>
+        <h1>Let`s do this!!!</h1>
+        <Link href="https://www.google.com/"><a>Let`s go to google</a></Link>
         <p>Tots in the hoooouuuse</p>
       </main>
 
