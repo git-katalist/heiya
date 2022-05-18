@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Let`s do this!!!</h1>
-        <Link href="https://www.google.com/"><a className="google">Let`s go to google</a></Link>
+        <Link href="https://www.google.com/"><a className={styles.google}>Let`s go to google</a></Link>
         <p>Tots in the hoooouuuse</p>
       </main>
 

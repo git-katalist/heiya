@@ -2,14 +2,14 @@
   padding: 0 2rem;
 }
 
-a.google{
+.google{
     background-color: #1A7F37;
     color: white;
     padding: 10px 30px;
     border-radius: 15px;
 }
 
-a.google:hover{
+.google:hover{
 background-color: #17A03D;
 }
 
