@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Let`s do this!!!</h1>
-        <Link href="https://www.google.com/"><a style={{backgroundColor:'#1A7F37',color:'white', padding:'20px 30px', borderRadius:'15px'}}>Let`s go to google</a></Link>
+        <Link href="https://www.google.com/"><a className="google">Let`s go to google</a></Link>
         <p>Tots in the hoooouuuse</p>
       </main>
 
