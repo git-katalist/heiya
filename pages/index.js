@@ -18,6 +18,7 @@ export default function Home() {
         <h1>Let`s do this!!!</h1>
         <Link href="https://www.google.com/"><a className={styles.google}>Let`s go to google</a></Link>
         <p>Tots in the hoooouuuse</p>
+        <p>Get some !!!</p>
       </main>
 
       <footer className={styles.footer}>
