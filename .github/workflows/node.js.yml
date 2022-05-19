@@ -21,21 +21,25 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        cache: "npm"
-    - run: npm ci
-    - run: npm run export
-    env:
-      NEXT_PUBLIC_BASE_PATH: /heiya
-    - run: npm run export
-    env:
-      NEXT_PUBLIC_BASE_PATH: /heiya
-    - run: touch ./out/.nojekyll
+      
 
+    - name: Installing my packages
+      run: npm ci
+
+    - name: Build my App  
+      run: npm run build
+      env:
+        NEXT_PUBLIC_BASE_PATH: /heiya
+    - run: npm run export
+      env:
+        NEXT_PUBLIC_BASE_PATH: /heiya
+    - run: touch ./out/.nojekyll
+    
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.2.5
+      uses: JamesIves/github-pages-deploy-action@3.5.9
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages # The branch the action should deploy to.
